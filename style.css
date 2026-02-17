@@ -1,0 +1,249 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f4f0eb;
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background-color: #6f4e37;
+  color: #fff;
+  padding: 20px 10px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: #d1bfa7;
+}
+
+/* LinkedIn Icon in nav */
+nav .linkedin-icon {
+  float: right;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+nav .linkedin-icon:hover {
+  color: #d1bfa7;
+}
+
+/* HERO SECTION */
+.hero {
+  background-color: #e3d4c5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.hero-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+  border: 4px solid #6f4e37;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero h3 {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #5a3d2b;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* HERO BUTTONS */
+.hero-buttons {
+  margin-top: 20px;
+}
+
+.btn, .btn-outline {
+  padding: 12px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn {
+  background-color: #6f4e37;
+  color: #fff;
+}
+
+.btn:hover {
+  background-color: #a6785a;
+}
+
+.btn-outline {
+  border: 2px solid #6f4e37;
+  color: #6f4e37;
+}
+
+.btn-outline:hover {
+  background-color: #6f4e37;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #6f4e37;
+  font-size: 2rem;
+}
+
+/* SKILLS GRID */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid div {
+  background-color: #f5ede3;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #d1bfa7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-grid div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.skills-grid h4 {
+  color: #6f4e37;
+  margin-bottom: 10px;
+}
+
+/* PROJECTS & EXPERIENCE CARDS */
+.project-card, .experience-card {
+  background-color: #f5ede3;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border-left: 5px solid #6f4e37;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-card:hover, .experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-card h3, .experience-card h3 {
+  color: #6f4e37;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
+#contact p, #contact a {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+#contact a {
+  color: #6f4e37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  color: #a6785a;
+}
+
+/* FOOTER */
+footer {
+  background-color: #6f4e37;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  nav .linkedin-icon {
+    float: none;
+    display: inline-block;
+    margin-left: 0;
+  }
+}
+
+/* FADE-IN ANIMATION */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
