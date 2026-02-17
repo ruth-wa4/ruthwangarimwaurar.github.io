@@ -1,110 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ruth Wangari Mwaura | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ruth Wangari Mwaura | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for LinkedIn icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
 
+<!-- HEADER -->
 <header>
-    <h1>Ruth Wangari Mwaura</h1>
-    <p class="tagline">Information Technology Graduate | IT Support & Digital Systems Specialist</p>
-</header>
-
-<nav>
+  <h1>Ruth Wangari Mwaura</h1>
+  <p>Information Technology Graduate</p>
+  <nav>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
-</nav>
+    <!-- LinkedIn Icon in nav -->
+    <a href="https://www.linkedin.com/in/ruthwangari2625" target="_blank" class="linkedin-icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </nav>
+</header>
 
-<section id="about">
-    <h2>About Me</h2>
+<!-- HERO SECTION -->
+<section class="hero fade-in">
+  <div class="hero-content">
+    <img src="your-photo.jpg" alt="Ruth Wangari Mwaura" class="hero-photo" />
+    <h2>Hello, I’m Ruth 👋</h2>
+    <h3>Information Technology Graduate</h3>
     <p>
-        I am Ruth Wangari Mwaura, an Information Technology graduate with practical experience in IT support, 
-        banking systems, and digital service operations. I have worked in both public and private institutions, 
-        gaining hands-on exposure in system support, customer service, and financial technology environments.
+      I am an Information Technology graduate with experience in system development,
+      IT support, and customer service. I have worked in professional environments
+      including KALRO Kandara and Consolidated Bank, and I enjoy using technology to
+      support business operations and improve service delivery.
     </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View My Work</a>
+      <a href="https://www.linkedin.com/in/ruthwangari2625" target="_blank" class="btn-outline">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+  <p>
+    I am an Information Technology graduate with a strong interest in business systems,
+    customer support, and practical technology solutions. During my academic training,
+    I developed systems aimed at solving real-world problems, including an Inventory
+    Management System for car spare parts and a Payroll Management System for employee
+    salary processing.
+  </p>
+  <p>
+    I have also gained hands-on professional experience working in IT support at KALRO
+    Kandara and in customer service and technical support at Consolidated Bank. These
+    experiences strengthened my ability to work with users, handle operational systems,
+    and support digital services in organizational environments.
+  </p>
+  <p>
+    My career goal is to grow within the ICT field by contributing to efficient systems,
+    reliable support services, and improved digital service delivery in business and
+    financial institutions.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div>
+      <h4>HTML & CSS</h4>
+      <p>Designed and structured user interfaces for web-based systems and personal projects, focusing on clean layouts and user-friendly design.</p>
+    </div>
+    <div>
+      <h4>Basic JavaScript</h4>
+      <p>Applied for form validation, calculations, and simple interactivity in academic projects.</p>
+    </div>
+    <div>
+      <h4>MySQL</h4>
+      <p>Created and managed databases for storing user records, payroll data, and inventory information in system development projects.</p>
+    </div>
+    <div>
+      <h4>System Development</h4>
+      <p>Developed academic systems including an Inventory Management System and a Payroll Management System based on real-world business needs.</p>
+    </div>
+    <div>
+      <h4>IT Support & Troubleshooting</h4>
+      <p>Provided technical support to staff and customers by diagnosing and resolving hardware, software, and system-related issues.</p>
+    </div>
+    <div>
+      <h4>Customer Service</h4>
+      <p>Handled customer inquiries professionally, explained technical processes clearly, and ensured positive service delivery.</p>
+    </div>
+    <div>
+      <h4>Data Entry & Records Management</h4>
+      <p>Maintained accurate records through proper data capture, reconciliation of system entries, and verification of financial and operational documents.</p>
+    </div>
+    <div>
+      <h4>Mobile & Internet Banking Support</h4>
+      <p>Assisted customers in registering and using mobile and internet banking services, ensuring secure access and correct usage of digital banking platforms.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+  <div class="project-card">
+    <h3>Inventory Management System (Car Spare Parts)</h3>
     <p>
-        During my academic journey, I developed an Inventory Management System at college and a Payroll 
-        Management System at university. Professionally, I worked in IT Support at KALRO Kandara and later 
-        at Consolidated Bank of Kenya, where I supported customer service operations and digital banking services.
+      Developed a system to manage car spare parts, tracking stock in/out, performing calculations,
+      and generating reports. Improved record keeping and stock monitoring.
     </p>
+  </div>
+  <div class="project-card">
+    <h3>Payroll Management System</h3>
+    <p>
+      Developed a Payroll Management System that calculated employee salaries based on working hours
+      and applied deductions where necessary. Generated payroll records for efficient salary processing.
+    </p>
+  </div>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+  <h2>Work Experience</h2>
+  <div class="experience-card">
+    <h3>KALRO Kandara — IT Support</h3>
     <ul>
-        <li>IT Support & Troubleshooting</li>
-        <li>Banking Systems Operations</li>
-        <li>Mobile & Internet Banking Support</li>
-        <li>ATM & Vault Reconciliation</li>
-        <li>Account Opening Systems</li>
-        <li>Data Entry & Records Management</li>
-        <li>Customer Service & Communication</li>
-        <li>Teamwork & Time Management</li>
+      <li>Provided technical support to staff and assisted with computer troubleshooting.</li>
+      <li>Supported system maintenance and basic network operations.</li>
+      <li>Assisted in system installations and user support.</li>
     </ul>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>Inventory Management System</h3>
-        <p>
-            A system designed to manage stock records, track inventory movement, and generate basic reports 
-            for organizational use.
-        </p>
-        <p><strong>Key Features:</strong> Item registration, stock tracking, reporting, user-friendly interface.</p>
-    </div>
-
-    <div class="project">
-        <h3>Payroll Management System</h3>
-        <p>
-            A system developed to automate employee payroll processing, including salary calculation and 
-            record management.
-        </p>
-        <p><strong>Key Features:</strong> Employee records, payroll calculation, payslip generation, reports.</p>
-    </div>
-
-</section>
-
-<section id="experience">
-    <h2>Experience</h2>
-
-    <h3>KALRO Kandara – IT Support</h3>
+  </div>
+  <div class="experience-card">
+    <h3>Consolidated Bank — Customer Service & Technical Support</h3>
     <ul>
-        <li>Assisted users with system and hardware issues</li>
-        <li>Supported system maintenance and troubleshooting</li>
-        <li>Ensured smooth daily IT operations</li>
+      <li>Opened new customer accounts and handled customer inquiries.</li>
+      <li>Performed ATM reconciliation and cheque capturing/verification.</li>
+      <li>Assisted customers with mobile banking and internet banking services.</li>
+      <li>Handled RTGS forms, banker’s cheques, batch reversals, and record reconciliation.</li>
+      <li>Supported marketing activities and customer communication.</li>
     </ul>
-
-    <h3>Consolidated Bank of Kenya – Attachment</h3>
-    <ul>
-        <li>Account opening support</li>
-        <li>ATM reconciliation</li>
-        <li>Cheque capturing and verification</li>
-        <li>Cash vault transactions</li>
-        <li>Mobile and internet banking support</li>
-        <li>Customer inquiries and service</li>
-        <li>RTGS and banker’s cheque issuance</li>
-        <li>Marketing of bank products</li>
-        <li>Batch reversals and record reconciliation</li>
-    </ul>
+  </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your-email@example.com</p>
-    <p>GitHub: https://github.com/RUTHWANGARIMWAURAR</p>
-    <p>LinkedIn: (www.linkedin.com/in/ruthwangari2625)</p>
+<!-- CONTACT -->
+<section id="contact" class="fade-in">
+  <h2>Contact Me</h2>
+  <p>Email: ruthwangarimwaura@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/RUTHWANGARIMWAURAR" target="_blank">github.com/RUTHWANGARIMWAURAR</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/ruthwangari2625" target="_blank">View my LinkedIn Profile</a></p>
 </section>
 
 <footer>
-    <p>&copy; 2026 Ruth Wangari Mwaura</p>
+  <p>© 2026 Ruth Wangari Mwaura | Portfolio</p>
 </footer>
+
+<!-- FADE-IN JS -->
+<script>
+  const faders = document.querySelectorAll('.fade-in');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('show');
+      appearOnScroll.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
 
 </body>
 </html>
